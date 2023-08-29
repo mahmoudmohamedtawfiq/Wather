@@ -32,7 +32,7 @@ let date = new Date() ;
 
 
 async function getWeatherData () {
-   let  apiResponse = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=362989f873a1417297f164547232002&q=${currentCity}&days=7`) ;
+   let  apiResponse = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=e7ccaea13e724351b90131014232908=${currentCity}&days=7`) ;
      responseData = await apiResponse.json() ;
     console.log(responseData);
     displayTodayWeather () ;
